@@ -1,6 +1,6 @@
 services:
   personal-website:
-    image: ${DOCKER_IMAGE}:${DOCKER_TAG}
+    image: ${IMAGE_NAME}:${IMAGE_TAG}
     container_name: personal-website
     restart: unless-stopped
     expose:
