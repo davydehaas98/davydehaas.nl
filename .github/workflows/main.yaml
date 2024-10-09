@@ -82,8 +82,8 @@ jobs:
             echo 'USER_DIR=${{ env.USER_DIR }}' >> .env
             echo 'DOMAIN_NAME=${{ env.DOMAIN_NAME }}' >> .env
 
-            echo 'DOCKER_IMAGE=$${{ env.IMAGE_NAME }}' >> .env
-            echo 'DOCKER_TAG=main-${{ github.run_number }}-${{ github.run_attempt }}' >> .env
+            echo 'IMAGE_NAME=${{ env.IMAGE_NAME }}' >> .env
+            echo 'IMAGE_TAG=main-${{ github.run_number }}-${{ github.run_attempt }}' >> .env
 
             docker compose up -d
           EOF
